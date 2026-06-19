@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//properties of class
+class teacher
+
+{
+    public:
+    string name;
+    string dept;
+    double salary;
+    string subject;
+    
+    //methods/member function
+    
+void changedept(string newdept)
+{
+    dept=newdept;
+}
+    
+};
+
+int main()
+{
+    teacher t1;
+    t1.name ="chinmay";
+    t1.subject="science";
+    t1.dept="cse";
+    t1.salary=6000;
+    cout<<t1.name <<endl;
+    return 0;
+}
