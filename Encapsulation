@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class teacher
+
+{
+//properties of class
+    private:
+    double salary;   //data hiding
+
+    public:
+    string name;
+    string dept;     //public data
+    string subject;
+
+//methods/member function
+    
+void changedept(string newdept)
+{
+    dept=newdept;
+}
+    
+};
+
+int main()
+{
+    teacher t1;
+    t1.name ="chinmay";
+    t1.subject="science";
+    t1.dept="cse";
+    t1.changedept("bba");  //change dept is also used.
+    cout<<t1.dept<<endl;
+    return 0;
+}
+
+//Here data is wrapped inside a class which is called encapsulation and it is also usde in data hiding using 
+access modifiers.
+
+
+
+
