@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//properties of class
+class teacher
+
+{
+    private:
+    double salary;   //here salary becomes private property so it can't be accisible now
+
+    public:
+    string name;
+    string dept;
+    string subject;
+    
+    //methods/member function
+    
+void changedept(string newdept)
+{
+    dept=newdept;
+}
+    
+};
+
+int main()
+{
+    teacher t1;
+    t1.name ="chinmay";
+    t1.subject="science";
+    t1.dept="cse";
+    t1.salary=6000;    //this line shows error because the salary is now private property
+
+    cout<<t1.name <<endl;
+    return 0;
+}
+
+
+
+
+
